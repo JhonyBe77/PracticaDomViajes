@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    margin: 0 150px;
+}
+
+.welcome {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+}
+
+.recommended {
+    text-align: left;
+    margin: 20px 20px;
+}
+/*
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+*/
+
+.card {
+    flex: 1 1 calc(33.333% - 20px); /* Cada tarjeta ocupa 1/3 del contenedor */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+
+.destinations {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre tarjetas */
+  }
+
+  
+#destinos {
+    width: 100%; /* Esto hará que el selector ocupe el 100% del ancho de su contenedor */
+}
+
+/* Estilos para pantallas pequeñas (móvil) */
+@media (max-width: 768px) {
+    #cards-container {
+      display: block; /* Coloca las tarjetas en una sola columna */
+    }
+  
+    .card {
+      width: 100%; /* Cada tarjeta ocupa el 100% del ancho en pantallas pequeñas */
+      margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+  }
