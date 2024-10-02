@@ -4,17 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             titulo: 'viaje 1',
             descripcion: 'El perro de san Roque no tiene rabo porque Ramón Rodríguez...',
-            imgSrc: 'viajes/viajes-5.jpg'
+            imgSrc: './viajes/viajes-5.jpg'
         },
         {
             titulo: 'viaje 2',
             descripcion: 'El perro de san Roque no tiene rabo porque Ramón Rodríguez...',
-            imgSrc: 'viajes/viajes-6.jpg'
+            imgSrc: './viajes/viajes-6.jpg'
         },
         {
             titulo: 'viaje 3',
             descripcion: 'El perro de san Roque no tiene rabo porque Ramón Rodríguez...',
-            imgSrc: 'viajes/viajes-7.jpg'
+            imgSrc: './viajes/viajes-7.jpg'
         }
     ];
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. Generar la imagen de bienvenida (montañas)
     const welcomeSection = document.querySelector('.welcome');
     const featuredImage = document.createElement('img'); // Creamos la imagen
-    featuredImage.src = 'banner/6.jpg'; // Ruta de la imagen de la montaña
+    featuredImage.src = './banner/6.jpg'; // Ruta de la imagen de la montaña
     featuredImage.alt = 'Montaña Nevada'; // Texto alternativo
     featuredImage.classList.add('featured-image'); // Añadimos la clase CSS para estilos
 
